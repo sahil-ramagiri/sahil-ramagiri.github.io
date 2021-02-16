@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="container">
+    <ul class="row1">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul class="row2">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul class="row3">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+<div class="player">
+  <div class="toggle">
+    <input type="checkbox" class="toggle-btn" onclick="checkToggle();">
+    <div class="toggle-act"></div>
+    <h2>Against AI</h2>
+  </div>
+  <section id="p1">
+    <h1>X</h1>
+  </section>
+  <section id="p2">
+    <h1>O</h1>
+  </section>
+</div>
+<div class="retry">
+  <section class="status">
+
+  </section>
+  <button id="retry" type="button" name="Retry">
+    Retry
+  </button>
+</div>
+</body>
+</html>

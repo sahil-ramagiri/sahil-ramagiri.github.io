@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sahil-ramagiri.github.io
+Token: 1b05e5ce8d6c78148bbf2187bbbfc4053f6037de51c6d4361db90a2090c48d2c

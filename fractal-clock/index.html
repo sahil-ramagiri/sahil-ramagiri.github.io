@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fractal Clock</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="p5.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <script src="index.js" charset="utf-8"></script>
+  <span class="time"=>
+    <h1 id="hr"></h1>
+    <h1 id="min"></h1>
+    <h1 id="sec"></h1>
+  </span>
+  <p id="info" onclick="infoClick();">i</p>
+  <div class="menu">
+    <p id="close" onclick="infoClick();">X</p>
+      <div class="container">
+        <section class="settings">
+          <h2>Settings</h2>
+          <div class="clockToggle">
+            <p>1 hour clock</p>
+            <div class="cont">
+                <div class="checkbox" onclick="clockType();"></div>
+                <div class="checkbox2" ></div>
+            </div>
+            <p>1 min clock</p>
+          </div>
+        </section>
+        <section class="description">
+          <h2>Description</h2>
+          <p class="des">
+            This web project is inspired from <a href="https://www.youtube.com/watch?v=4SH_-YhN15A&t=881s">code parade</a>'s fractal clock.<br>
+            Basically this is a implementation of binary fractal trees, where hands of the clock are first two branches and then they branch out recursively until a specified limit is reached.<br>
+            These branches form various fractals based on the configuration i.e angle between the clock hands.
+
+          </p>
+
+        </section>
+      </div>
+  </div>
+</body>
+</html>

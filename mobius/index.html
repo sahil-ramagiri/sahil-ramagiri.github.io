@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mobius</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./p5.min.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="wrapper"></div>
+  <div class="container">
+
+  <section class="group">
+    <button type="button" name="pause/play" onclick="toggle = toggle == false; "> <p>Pause / Play</p></button>
+  </section>
+  <section class="group advanced">
+    <button type="button" name="Save" onclick="save();"> <p>Save image</p></button>
+  </section>
+  <section class="group"> <p>Strip color</p>
+    <input type="color" id="stripC" value="#ef00ff">
+  </section>
+  <section class="group"> <p>Path color</p>
+  <input type="color" id="pathC" value="#ffd700">
+  </section>
+  <section class="group"> <p>inner loop color</p>
+  <input type="color" id="loop1C" value="#ffffff">
+  </section>
+  <section class="group"> <p>outer loop color</p>
+  <input type="color" id="loop2C" value="#aafaff">
+  </section>
+  <!-- <section class="group advanced"><p>Path-thickness</p>
+  <input type="range"min="2" max="10"  value="3">
+  </section>
+  <section class="group advanced"><p>Strip-thickness</p>
+  <input type="range"min="2" max="100"  value="25">
+  </section>
+  <section class="group advanced"><p>Strip-radius</p>
+  <input type="range"min="100" max="300" id="s-rad" value="150">
+  </section> -->
+  <section class="group"><p>n-Pi rotations</p>
+  <input type="number" min="0" max="5" step="1" id="nPi" value="1" oninput="this.value%=10">
+  </section>
+
+  <section class="group"><p>resolution</p>
+  <input type="range"min="2" max="350" id="step" value="100">
+  </section>
+  <section class="group"><p>rotation-speed</p>
+  <input type="range"min="50" max="1000" id="speed" value="300">
+  </section>
+
+  <section class="group"><p>rotateX</p>
+  <input type="checkbox" id="rX" checked>
+  </section>
+  <section class="group"><p>rotateY</p>
+  <input type="checkbox" id="rY" >
+  </section>
+  <section class="group"><p>rotateZ</p>
+  <input type="checkbox" id="rZ" >
+  </section>
+  <section class="group"><p>Show-path</p>
+  <input type="checkbox" id="pathS" checked>
+  </section>
+  <section class="group"><p>Show-strip</p>
+  <input type="checkbox" id="stripS" checked>
+  </section>
+  <section class="group advanced"><p>Show-strip-edge</p>
+  <input type="checkbox"  checked>
+  </section>
+  <section class="group"><p>Show-outer-loop</p>
+  <input type="checkbox" id="loop1S" checked>
+  </section>
+  <section class="group"><p>Show-inner-loop</p>
+  <input type="checkbox" id="loop2S" >
+  </section>
+  </div>
+</body>
+</html>
