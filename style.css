@@ -64,7 +64,7 @@ section{
   margin-bottom: 20px;
 }
 
-a, a:visited{
+a, a:visited, span {
   text-decoration: none;
   color: rgb(161, 112, 240);
 }
